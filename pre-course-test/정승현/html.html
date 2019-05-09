@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+<style>
+.wrapper > div {
+  //background-color: orange;
+  border: 1px black solid;
+}
+
+.wrapper > div:nth-child(odd) {
+  //background-color: indianred;
+}
+
+.wrapper {
+  display: grid;
+  width: 398px;
+  height: 298px;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 30px 30px 30px 210px;
+  grid-template-areas:
+  "news contents"
+  "posts contents"
+  "profile contents"
+  "footer contents";
+  grid-gap: 0px;
+  border-style: solid;
+  border-width: thin;
+ }
+ 
+a:hover {
+  color: #f1f1f1;
+}
+ 
+ 
+ .contents{
+   grid-area: contents;
+   background-color: lightblue;
+ }
+ 
+  .news{
+   grid-area: news;
+   background-color: lightgrey;
+ }
+
+  .posts{
+   grid-area: posts;
+   background-color: orange;
+ }
+ 
+ .profile{
+   grid-area: profile;
+   background-color: pink;
+ }
+ 
+ .footer{
+   grid-area: footer;
+   background-color: lightgreen;
+   align-self:end;
+
+ }
+ 
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+</style>
+<div class="wrapper">
+  <div class="contents">Hello Ebay <br><button class="btn">Read more...</button></div>
+  <div class="news"><a>news</a></div>
+  <div class="posts"><a>posts</a></div>
+  <div class="profile"><a>profile</a></div>
+  <div class="footer">2019 Ebay Korea</div>
+</div>
+
+</body>
+</html>
